@@ -14,6 +14,7 @@ intents.members = True
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 
+# Reads the profanity_list.txt file and adds each word into the banned_words list
 def load_profanity_filter():
     """Load profanity words from external file"""
     try:
